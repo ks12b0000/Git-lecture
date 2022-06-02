@@ -28,6 +28,17 @@
     ls -al : 현재 디렉토리에 숨겨져 있는 내용들까지 다 보여줌
     cd : 디렉토리 이동
     cat : 파일의 내용을 보여줌
+    git commit -am "" : add와 coomit을 한꺼번에 같이 해주는 명령어. 
+                        a는 add를 뜻하고 m은 메세지를 뜻함 최초 한번은 add가 되어야 됨
+   touch : 파일 생성해주는 명령어
+   rm : 파일 삭제해주는 명령어
+   git config --global core.editor "" : 기본 깃 텍스트 에디터 설정.
+   git reset --hard : 내가 원하는 버전으로 리셋하겠다. 내가 수정하던 것 까지 지움
+   수정하고 있던것은 살리고 싶으면 hard 대신 soft or mixed
+   복사하기 : Ctrl + Insert
+   붙여넣기 : Shift + Insert
+   git revert : 이전 이력은 그대로 두고, 되돌릴 commit의 코드만 원복한다.
+   git commit --amend : git commit 메세지의 내용을 변경할 수 있음          
     1) 저장소(Repository)생성
        - git init
           - 실행한 위치 Git 저장소로 초기화
@@ -68,6 +79,8 @@
                - 각 커밋을 한 줄로 보여줌
          -git log --pretty=oneline --graph
                - 여러 브랜치를 생성하고 병합하는 작업을 가시적으로 그래프적으로 표시함.
+         -git log --all --oneline --graph
+               - 모든 브랜치들의 커밋내용을 한줄로 그래프 형식으로 보여줌
      7) 브랜치 병합
          -git merge 브랜치이름
            - 현재 작업 중인 브랜치에 '브랜치이름'의 브랜치 끌어와 병합함.
